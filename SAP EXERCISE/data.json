@@ -1,0 +1,41 @@
+
+{
+	"products": [
+				{
+				"prodId": "PROD1001",
+				"prodName": "SOLID GREEN COTTON TSHIRT",
+				"style": "MS13KT1906",
+				"color": "black",
+				"netPrice": "200.00",
+				"price": "225.00",
+				"qty":"1",
+				"size": "XL",
+				"url": "assets/T1.jpg"
+				},
+				
+				
+				{
+				"prodId": "PROD1002",
+				"prodName": "SOLID GREEN COTTON TSHIRT",
+				"style": "MS13KT1906",
+				"color": "pink",
+				"netPrice": "300.00",
+				"price": "350.00",
+				"qty":"1",
+				"size": "M",
+				"url": "assets/T2.jpg"
+				},
+				
+				{
+				"prodId": "PROD1003",
+				"prodName": "SOLID GREEN COTTON TSHIRT",
+				"style": "MS13KT1906",
+				"color": "multi",
+				"netPrice": "600.00",
+				"price": "500.00",
+				"qty":"1",
+				"size": "L",
+				"url": "assets/T3.jpg"
+				}
+				]
+	}

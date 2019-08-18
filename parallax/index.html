@@ -1,0 +1,101 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script type="text/javascript" src="jq.js"></script>
+<link rel="stylesheet" href="css.css" type="text/css" />
+<script src="js.js"></script>
+</head>
+<body>
+<!-- Grab Google CDN's jQuery. fall back to local if necessary -->
+<div id="wrapper">
+  <div id="primary" style="border:1px solid #f00">
+    <ul>
+      <li>
+        <a class="manned-flight" href="#manned-flight">About Me</a> </li>
+      <li>
+        <h1>The frameless parachute</h1>
+        <a class="frameless-parachute" href="#frameless-parachute">Portfolio</a> </li>
+      <li>
+        <h1>Over the English Channel</h1>
+        <a class="english-channel" href="#english-channel">Memories</a> </li>
+      <li>
+        <h1>About</h1>
+        <a class="about" href="#about">Contact Me</a> </li>
+    </ul>
+  </div>
+  
+  
+  <div id="content">
+    <article id="manned-flight">
+    <div>
+      <header>
+        <h1>About Me</h1>
+      </header>
+      <p>The first clearly recorded instance of a balloon carrying passengers used hot air to generate buoyancy and was built by the brothers Joseph-Michel and Jacques-Etienne Montgolfier in Annonay, France. After experimenting with unmanned balloons and flights with animals, the first tethered balloon flight with humans on board took place on October 15, 1783.</p>
+      <nav class="next-prev">
+        <hr />
+        <a class="next frameless-parachute" href="#frameless-parachute">Next</a> </nav>
+      </div>
+    </article>
+    <article id="frameless-parachute">
+    <div>
+      <header>
+        <h1>Portfolio</h1>
+      </header>
+      <p>André-Jacques Garnerin carried out the first jump with a silk parachute on October 22, 1797 at Parc Monceau, Paris. Garnerin's first parachute resembled a closed umbrella before he ascended; at a height of approximately 3,000 feet he severed the rope that connected his parachute to the balloon, and the basket fell to earth. Garnerin emerged uninjured.</p>
+      <nav class="next-prev"> <a class="prev manned-flight" href="#manned-flight">Prev</a>
+        <hr />
+        <a class="next english-channel" href="#english-channel">Next</a> </nav>
+      </div>
+    </article>
+    <article id="english-channel">
+    <div>
+      <header>
+        <h1>Memories</h1>
+      </header>
+      <p>On January 7, 1785, Jean Pierre Blanchard and Dr. John Jeffries made the first flight over the English Channel, traveling from Dover to France. During the crossing the balloon lost altitude, so they began tossing everything in the gondola they possibly could, even their clothes. About two hours after take off, they crossed the French coast clad only in their underwear.</p>
+      <nav class="next-prev"> <a class="prev frameless-parachute" href="#frameless-parachute">Prev</a>
+        <hr />
+        <a class="next about" href="#about">Next</a> </nav>
+      </div>
+    </article>
+    <article id="about">
+    <div>
+      <header>
+        <h1>Contact Me</h1>
+      </header>
+      <p>This is a jQuery parallax scrolling experiment by Jonathan Nicol. <a href="#">Read about it</a> on my blog.</p>
+      <nav class="next-prev"> <a class="prev english-channel" href="#english-channel">Prev</a>
+        <hr />
+      </nav>
+      </div>
+    </article>
+  </div>
+  
+  
+  <!-- Parallax foreground -->
+  <div id="parallax-bg3">
+  	<img id="bg3-1" src="images/png6.png" />
+  	<img id="bg3-2" src="images/png14.png" /> 
+    <img id="bg3-3" src="images/png15.png" /> 
+    <img id="bg3-4" src="images/png21.png" />
+    </div>
+  <!-- Parallax  midground clouds -->
+  <div id="parallax-bg2">
+        <img id="bg2-1" src="images/png18.png" />
+        <img id="bg2-2" src="images/png.png" /> 
+        <img id="bg2-3" src="images/png7.png" /> 
+        <img id="bg2-4" src="images/png3.png" />
+  </div>
+  <!-- Parallax  background clouds -->
+  <div id="parallax-bg1">
+        <img id="bg1-1" src="images/png9.png" />
+        <img id="bg1-2" src="images/png26.png" /> 
+        <img id="bg1-3" src="images/png11.png" /> 
+        <img id="bg1-4" src="images/png22.png" />
+  </div>
+</div>
+<div style="clear:both;"></div>
+
+</body>
+</html>

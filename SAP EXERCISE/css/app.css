@@ -1,0 +1,87 @@
+/*
+$breakpoints: (
+  small: 0px,
+  medium: 640px,
+  large: 1024px,
+  xlarge: 1200px,
+  xxlarge: 1440px,
+);
+
+*/
+
+
+/* Global classes: typo, color etc.. */
+	body *{font-family: 'Open Sans', sans-serif !important;}
+	header h1{font-size:2.8rem; font-weight:normal; text-transform:uppercase;}
+	.border{border:1px solid #000 !important}
+	.button, [type="text"], [type="password"], [type="date"], [type="datetime"], [type="datetime-local"], [type="month"],
+	[type="week"], [type="email"], [type="number"], [type="search"], [type="tel"], [type="time"], [type="url"], [type="color"], textarea{border-radius:0 !important}
+	
+/* Small only */
+@media screen and (max-width: 39.9375em) {
+		.miniCartBucket{font-size:0.9rem;}
+		header{padding-top:20px;}
+		header h1{font-size:1rem;}
+		.listBucket{border-top:7px solid #ccc;border-bottom:7px solid #ccc;}
+		.listRow{padding:10px 0;border-bottom:1px solid #ccc}
+			.listRow h4{font-size:0.75rem; font-weight:600;margin:5px 0 0 0;}
+			.listRow p{font-size:0.75rem; margin:0}
+			.listRow .price, .price{font-size:1.2rem;margin-top:10px;}
+			
+			
+		.bottBucket{margin-top:10px;}		
+		.promoText .lbl{margin:0 0 10px; padding:0 50px;text-align:center;}
+		.subTotalBucket p{margin:0}
+
+}
+
+/* Medium and up */
+@media screen and (min-width: 40em) {
+		header h1{margin:30px 0 50px 0}
+		header .miniCartBucket{font-size:1.5rem;color:#666;margin:28px 0 50px}
+		header .miniCartBucket .cartItem{font-size:2.5rem;}
+		.titleRow{padding:15px 0;border-top:1px solid #ccc;}
+		.listBucket{border-top:7px solid #ccc;border-bottom:7px solid #ccc;}
+		.listRow{padding:30px 0;border-bottom:1px solid #ccc}
+			.listRow h4{font-size:0.8rem; font-weight:600;margin:5px 0 0 0;}
+			.listRow p{font-size:0.8rem; margin:0 0}
+			.listRow .ctaBucket{margin-top:25px;}
+			.listRow .ctaBucket > span{font-size:0.7rem;padding-right:0;list-style-type:none;border-right:1px solid #ccc;}
+			.listRow .ctaBucket:nth-last-child{border:0;}
+			.listRow .ctaBucket > span:last-child{border:0;}
+			.listRow .priceCol{}
+			.listRow .priceCol .price, .price{font-size:1.2rem}
+			.listRow .priceCol .disPrice{font-size:1rem;color:#ccc; text-decoration:line-through}
+			
+		.bottBucket{margin-top:30px;}	
+		.promoText .lbl{font-size:0.85rem;}
+		.checkoutBucket{}
+			.helpText{font-size:0.9rem}
+			.couponBar{border-bottom:7px solid #ccc; padding-bottom:10px;}
+			
+		.subTotalBucket{ margin:15px 0}
+				.subTotalBucket > div{padding:10px 0}
+				.subtotalBar,.promoBar,.shipBar{font-size:0.9rem}
+				.subtotalBar p,.promoBar p,.shipBar p{font-size:0.75rem;color:#999;margin:0}
+				.subtotalBar p.price,.promoBar p.price,.shipBar p.price{font-size:1.2rem;color:#000}
+				
+				.totalBar{font-size:1.2rem;font-weight:bold;border-top:1px solid #ccc;border-bottom:7px solid #ccc;}
+				.totalBar p{font-size:0.75rem;color:#999;font-weight:normal;margin-bottom:0}
+				.totalBar p.price{font-size:1.4rem;color:#000;font-weight:bold;}
+		
+	}
+
+/* Medium only */
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+	
+	}
+
+/* Large and up */
+@media screen and (min-width: 64em) {
+	
+	}
+
+/* Large only */
+@media screen and (min-width: 64em) and (max-width: 74.9375em) {
+	
+	}

@@ -1,0 +1,100 @@
+@charset "utf-8";
+/* CSS Document */
+body{padding:0; margin:0; font:normal 12px arial; overflow:hidden}
+.clr{ display:block; clear:both; height:1px; font-size:1px;}
+.font14{ font-size:14px !important}
+.paddingNone{ padding:0 !important}
+.wrapper{margin:0 auto;}
+.dispNone{ display:none;}
+.leftCol{float:left;}
+.leftCol > div.slideCont{margin:0 auto; text-align:center; overflow:hidden;}
+.leftCol > div.slideCont img.slider{}
+.leftCol > div.slideCont#home{background:url(../Images/bg-home.gif); } 
+	.slideText{width:450px; margin: 0 auto; padding:0 25px 5px;background:#1e1d1d; text-align:left;background: none repeat scroll 0 0 #000;border-radius: 10px 10px 10px 10px;box-shadow: 0 0 100px 10px #000000;opacity: 0.7;}
+		div.slideText h1{padding:10px 0; padding-top:20px; display:block;}
+		div.slideText p{font:italic 18px Arial; color:#fff; line-height:25px;}
+		div.slideText div.linkBar{ margin:20px 0; cursor:pointer;}
+		div.slideText div.linkBar span{font:normal 32px arial; color:#fff;height:65px; line-height:65px; padding: 0 40px; margin-right:10px; float:left; background:#19b19b;box-shadow: 0 5px 5px 0 #333;}
+		div.slideText div.linkBar img{box-shadow: 0 5px 5px 0 #333;}
+		div.slideText div.linkBar:hover span, div.slideText div.linkBar:hover img{box-shadow: 0 5px 5px 0 #666;}
+
+.leftCol > div.slideCont#about{background:url(../Images/bg-about.gif); } 
+		div.aboutCont{width:715px; margin: 0 auto; }
+		div.aboutCont h1{font:bold 28px Arial Black; color:#fff; padding:10px 0; margin:30px 70px 10px; cursor:pointer;}
+		div.aboutCont p{font:italic 14px/20px Arial; color:#fff; text-align:justify; margin:10px 70px;}
+		.pentagonContainer li{ float:left; width:133px;height:155px;  margin:0 5px; cursor:pointer;}
+		.upper{width:575px !important; margin:40px auto 0;}
+		.lower{ margin-top:-25px !important; position: absolute}
+		.pentagonContainer li span{display:block;font:normal 14px/23px arial; color:#fff; text-transform:uppercase; width:90%; margin: 0 auto; text-align:center;}
+		
+		.pentagonContainer li.white{background:url(../Images/bg-pentagon-white.png) center center;}
+		.pentagonContainer li.white span{color:#4f4f50}
+		.pentagonContainer li.blue{background:url(../Images/bg-pentagon-blue.png) center center;}
+		.pentagonContainer li.blue1{background:url(../Images/bg-pentagon-blue1.png) center center;}
+		.pentagonContainer li.green{background:url(../Images/bg-pentagon-green.png) center center;}
+		.pentagonContainer li.green1{background:url(../Images/bg-pentagon-green1.png) center center;}
+		.pentagonContainer li.white:hover{background:url(../Images/bg-pentagon-img1.png) center center;}
+		.pentagonContainer li.white:hover span{color:#fff}
+		.pentagonContainer li.blue:hover, .pentagonContainer li.blue1:hover{background:url(../Images/bg-pentagon-img2.png) center center;}
+		.pentagonContainer li.green:hover, .pentagonContainer li.green1:hover{background:url(../Images/bg-pentagon-img3.png) center center;}
+
+.leftCol > div.slideCont#team{background:url(../Images/bg-team.gif); } 
+		div.teamCont{width:725px; height:421px; margin: 0 auto;}
+		div.teamCont .teamCircle{width:141px; height:141px; margin:0 auto; background:url(../Images/img-team.png) no-repeat center top;}
+		div.teamCont .empCircle{width:233px; height:232px;cursor:pointer; margin-top:-80px;}
+		div.teamCont .empCircle:hover{background-position:center bottom !important;}
+			div.teamCont .empCircle.floatL{float:left;}
+			div.teamCont .empCircle.floatR{float:right;}
+		div.teamCont .empCircle.emp1{background:url(../Images/img-razdan.png) center top no-repeat;}
+		div.teamCont .empCircle.emp2{background:url(../Images/img-jog.png) center top no-repeat;}
+		div.teamCont .readMoreTxt{background:url(../Images/bg-white-round.png) center top no-repeat; margin:45px auto 0; width:231px; height:232px; color:#3b3b3b;}
+		.readMoreTxt h3{padding-top:60px; margin:0 20px;font:italic 18px arial; text-transform:uppercase;}
+		.readMoreTxt p{padding-top:10px; margin:0 20px; height:70px;font:normal 14px/20px arial;text-align:justify;}
+		.readMoreTxt a.linkReadMore{font:normal 14px/20px arial; color:#fe5555; background:url(../Images/img-arw.png) center bottom no-repeat; display:block; margin:0 75px; text-decoration:none; text-align:center; height:30px;}
+
+	#dialog .readMoreTxt h3{padding-top:0;}
+	#dialog .readMoreTxt a.linkReadMore{display:none;}
+	#dialog .readMoreTxt p{padding-top:10px; margin:0 20px; height: auto;font:normal 14px arial;text-align:justify;}
+
+.leftCol > div.slideCont#contact{background:url(../Images/bg-contact.gif); }
+	.tabData{ margin:20px auto 0; width:770px; height:500px; border:0px solid #fff}
+	.tabs li{float:left; background:#19b19b;; height:58px; width:385px; text-indent:-9999px; background:#094e58; cursor:pointer}
+	.tabs li.contact{background:#094e58 url(../Images/hd-contact.png) center bottom no-repeat}
+		.tabs li.contact.on{ background:#1cb29c url(../Images/hd-contact.png) center top no-repeat; cursor:default;}
+	.tabs li.submit{background:#094e58 url(../Images/hd-submit.png) center bottom no-repeat}
+		.tabs li.submit.on{ background:#1cb29c url(../Images/hd-submit.png) center top no-repeat; cursor:default;}
+	.tabCont{ padding:10px 0;}
+	.contactForm p{font:normal 16px/35px arial; color:#fff; text-align: left; padding-left:35px;}	
+	.contactForm p strong{ font-weight:bold;}	
+	.contactForm p em{ font-weight:bold; font-style:italic;}	
+	.icnLocation{background:url(../Images/icn-location.png) no-repeat left center;}
+	.icnMobile{background:url(../Images/icn-mobile.png) no-repeat left center;}
+	.icnMail{ background:url(../Images/icn-mail.png) no-repeat left center;}
+
+	.frmArea{ border:0px solid #fff}	
+	.frmArea li{float:left; padding:0; margin-right:2px;}
+	.frmArea li.lastCol{float:left;margin-right:0 !important;}
+	.frmArea li input, .frmArea li textarea{ font:normal 17px arial; color:#3b3b3b}
+	.frmArea li input{ width:235px; border:0; padding:15px 10px;}
+	.frmArea li textarea{width:750px; border:0; padding:15px 10px; margin-top:2px; height:150px;}
+	.frmArea li.btnBar{float:right;margin-right:0 !important;}
+	.frmArea li.btnBar input{background:#19b19b;font:normal 18px arial; color:#fff; width:auto; padding:10px 30px;}
+	#locDelhi, #locMumbai{text-decoration:underline; cursor:pointer;}
+	#locDelhi:hover, #locMumbai:hover{text-decoration: none;}
+	#map img{ width:100%; height:100%;}
+
+	.submitForm p{font:normal 40px arial; color:#ccc; text-align: center;}	
+
+
+.rightCol{width:20%; float:right; background: url(../Images/bg-right.gif); color:#fff}
+.rightCol ul#nav{ margin:30px 30px;}
+.rightCol ul#nav li{font:normal 25px arial;color:#4f4f50; padding:10px 0; cursor:pointer;}
+.rightCol ul#nav li:hover{color:#000;}
+.rightCol .subscribe{margin:30px;}
+	.rightCol .subscribe input{ background:#e6e6e6; border:1px solid #ccc; padding:5px; margin-right:2px; width:115px;}
+	.rightCol .subscribe input.btn{border:0; background:#02798b; color:#fff; text-transform:uppercase;margin:0;width:65px;}
+.rightCol .logo{ bottom:30px; position:fixed; margin-left:30px; z-index:9999;}
+.rightCol #nav img.act{margin-left:5px;}
+
+.pageDown{ position:absolute; top:10px; right:5px; position:fixed; cursor:pointer;}
+.pageUp{ position:absolute; bottom:10px; right:5px; position:fixed; cursor:pointer;}

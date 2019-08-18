@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+<title>UxD Demo - Sliding Horizontal Parallax</title>
+<link rel="stylesheet" type="text/css" media="screen" href="css/global.css" />
+<script src="scripts/jquery.min.js"></script>
+<script>
+ if (typeof jQuery == 'undefined'){
+	document.write(unescape('%3Cscript src="scripts/jquery-min.js" %3E%3C/script%3E'));
+ }
+</script>
+<script src="scripts/sequence.jquery.js"></script>
+<script src="scripts/jquery.bxslider.js"></script>
+<script src="scripts/overlay-dkt.js"></script>
+<script src="scripts/sequence.js"></script>
+</head>
+<body>
+<div id="sequence-theme">
+  <div id="sequence"> <img class="prev" src="images/bt-prev.png" alt="Previous" /> <img class="next" src="images/bt-next.png" alt="Next" />
+    <div class="logo animate-in"></div>
+    <ul>
+    <!--HOME SLIDE -->
+      <li class="slide">
+        <div class="bgWhite animate-in"></div>
+        <div class="wire animate-in"></div>
+        <div class="fences animate-in"></div>
+        <span class="trees animate-in"></span><span class="mountain animate-in"></span>
+        <div class="homeCont">
+          <h2>User eXperience Design Group</h2>
+          <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,</p>
+        </div>
+        <span class="sky animate-in"><img src="images/bg-sky.png" /></span><span class="mainNav service animate-in"><span class="tag txtNavServ"></span></span><span class="mainNav tools animate-in"><span class="tag txtNavTools"></span></span><span class="mainNav port animate-in"><span class="tag txtNavPort"></span></span><span class="mainNav process animate-in"><span class="tag txtNavProcess"></span></span>
+      </li>
+    <!--SERVICE SLIDE -->
+      <li class="slide">
+        <div class="bgWhite animate-in"></div>
+        <div class="wire animate-in"></div>
+        <div class="roads animate-in"></div>
+        <span class="buildings animate-in"></span> <span class="clouds animate-in"></span>
+        <div class="serviceCont">
+          <ul class="leftTabLinks">
+            <li>Usability</li>
+            <li class="act">Visual Design</li>
+            <li>UI Development</li>
+            <li>Technical Writing</li>
+          </ul>
+          <div class="rightCol">
+            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+          </div>
+        </div>
+        <span class="sky animate-in"><img src="images/bg-sky.png" /></span>
+        <div class="icnSingle animate-in" ><img src="images/img-services.gif" /><span class="tag txtNavServ"></span></div>
+      </li>
+    <!--TOOLS SLIDE -->
+      <li class="slide">
+        <div class="bgWhite animate-in"></div>
+        <div class="wire animate-in"></div>
+        <div class="grass animate-in"></div>
+        <span class="industry animate-in"></span> <span class="clouds animate-in"></span>
+        <div class="toolsCont">
+          <ul class="leftTabLinks">
+            <li>Usability</li>
+            <li>Visual Design</li>
+            <li class="act">Web Authoring</li>
+            <li>Multimedia Authoring</li>
+            <li>Technologies</li>
+          </ul>
+          <div class="rightCol">
+            <ul>
+              <li>Adobe Dreamweaver</li>
+              <li>Adobe Flash</li>
+              <li>Adobe Flex / AIR / Silverlight</li>
+            </ul>
+          </div>
+        </div>
+        <img class="sky" src="images/bg-sky.png" alt="Blue Sky" />
+        <div class="icnSingle animate-in"><img src="images/img-tools.gif" /><span class="tag txtNavTools"></span></div>
+      </li>
+    <!--PORTFOLIO SLIDE -->
+      <li class="slide">
+        <div class="bgWhite animate-in"></div>
+        <div class="wire animate-in"></div>
+        <div class="garden animate-in"></div>
+        <span class="cloudsPort animate-in"></span>
+        <div class="portCont">
+          <ul class="leftTabLinks">
+            <li class="act">Logo</li>
+            <li>Web</li>
+            <li>Print</li>
+            <li>Mobile</li>
+            <li>Touch Screen Devices</li>
+          </ul>
+          <div class="rightCol">
+            <div class="portDataCont">
+              <div class="tabCont show">
+                <div class="ss">
+                  <ul class="bxslider">
+                    <li> <img src="images/l/1.jpg">
+                      <div class="desc">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</div>
+                      <span class="descArw"></span>
+                      <div class="overlayData"> <img src="images/port/img-port1.gif" class="floatL marginR20" >
+                        <div class="rCont">
+                          <h3>Story: The Adventures of Sherlock Holmes----</h3>
+                          <h5>Title: A Scandal in Bohemia</h5>
+                          <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                        </div>
+                      </div>
+                    </li>
+                    <li><img src="images/l/2.jpg">
+                      <div class="desc">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</div>
+                      <span class="descArw"></span></li>
+                    <li><img src="images/l/3.jpg">
+                      <div class="desc">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</div>
+                      <span class="descArw"></span></li>
+                    <li><img src="images/l/4.jpg">
+                      <div class="desc">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</div>
+                      <span class="descArw"></span></li>
+                    <li><img src="images/l/5.jpg">
+                      <div class="desc">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</div>
+                      <span class="descArw"></span></li>
+                  </ul>
+                  <div id="bx-pager"> <a data-slide-index="0" href=""><img src="images/s/1.jpg" /></a> <a data-slide-index="1" href=""><img src="images/s/2.jpg" /></a> <a data-slide-index="2" href=""><img src="images/s/3.jpg" /></a> <a data-slide-index="3" href=""><img src="images/s/4.jpg" /></a> <a data-slide-index="4" href=""><img src="images/s/5.jpg" /></a> </div>
+                </div>
+              </div>
+              <div class="tabCont">
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,</p>
+              </div>
+              <div class="tabCont">
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,</p>
+              </div>
+              <div class="tabCont">
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,</p>
+              </div>
+              <div class="tabCont">
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <img class="sky" src="images/bg-sky.png" alt="Blue Sky" />
+        <div class="icnSingle animate-in" ><img src="images/img-port.gif" /><span class="tag txtNavPort"></span></div>
+      </li>
+    <!--PROCES SLIDE -->
+      <li class="slide">
+        <div class="bgWhite animate-in"></div>
+        <div class="wire animate-in"></div>
+        <div class="fields animate-in"></div>
+        <span class="cloudsProcess animate-in"></span>
+        <div class="processCont">
+          <ul class="leftTabLinks">
+            <li>3i Process</li>
+            <li>Interaction Phase</li>
+            <li class="act">Ideation Phase</li>
+            <li>Implementation Phase</li>
+          </ul>
+          <div class="rightCol">
+            <p>vel illum qui dolorem eum fugiat quo voluptas nulla pariatur, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut od it aut fugit, sed quia consequuntur magni vel illum qui dolorem eum fugiat quo voluptas nulla pariatur, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem.dolores eos qui ratione voluptatem.</p>
+          </div>
+        </div>
+        <img class="sky" src="images/bg-sky.png" alt="Blue Sky" />
+        <div class="icnSingle animate-in" ><img src="images/img-process.gif" /><span class="tag txtNavProcess"></span></div>
+      </li>
+    </ul>
+  </div>
+  <div class="sliderRoute"></div>
+  <div class="bottSliderNav">
+    <ul class="nav">
+      <li class="bHome"><img src="images/dot.png" /></li>
+      <li class="bService"><img src="images/dot.png" /></li>
+      <li class="bTools"><img src="images/dot.png" /></li>
+      <li class="bPort"><img src="images/dot.png" /></li>
+      <li class="bProcess"><img src="images/dot.png" /></li>
+    </ul>
+    <span class="birdBott stepHome"></span> </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function () {
+	$('.portDataCont .bxslider li img').shan();
+	}); 
+</script>
+</body>
+</html>

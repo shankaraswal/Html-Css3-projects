@@ -1,0 +1,132 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Foundation for Sites</title>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+<link rel="stylesheet" href="css/foundation.css">
+<link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+<div class="reveal" id="viewModal" data-reveal>
+  <div id="viewModalCont"></div>
+  <button class="close-button" data-close aria-label="Close modal" type="button"> <span aria-hidden="true">&#215;</span> </button>
+</div>
+<div class="reveal" id="editModal" data-reveal>
+  <div id="editModalCont"></div>
+  <button class="close-button" data-close aria-label="Close modal" type="button"> <span aria-hidden="true">&#215;</span> </button>
+</div>
+<header>
+  <div class="row columns text-right ">
+    <button class="alert button"  id="addItem">Add more item to cart</button>
+  </div>
+  <div class="row">
+    <h1 class="small-8 columns">your shopping bag</h1>
+    <p class="small-4 columns miniCartBucket text-right hide-for-small-only"><span class="cartItem">0</span> Items</p>
+  </div>
+</header>
+
+<section>
+  <div class="row titleRow">
+    <div class="medium-6 row"><span class="columns show-for-small-only"><span class="cartItem columns">0</span>Items</span></div>
+    <div class="medium-2 columns text-center size hide-for-small-only">SIZE</div>
+    <div class="medium-2 columns text-center qty hide-for-small-only">QTY</div>
+    <div class="medium-2 columns text-right priceCol hide-for-small-only">PRICE</div>
+  </div>
+  <div class="row columns listBucket">
+
+	<script id="shan" type="text/x-handlebars-template">
+
+	  {{#each products}}
+		   <div class="row listRow">
+			   <div class="medium-6 row">
+				  <div class="medium-4 columns"><a href="#" data-open="viewModal" data-prod-id="{{prodId}}"><img src="{{url}}"></a></div>
+				  <div class="medium-8 row columns">
+					 <h4>{{prodName}}</h4>
+					 <p>Style: {{style}}</p>
+					 <p>Color: {{color}}</p>
+					 <p class="disPrice hide"><sup>$</sup><span class="">{{price}}</span></p>
+					 <p class="price"> <sup>$</sup><span>{{netPrice}}</span></p>
+					 <div class="row ctaBucket hide-for-small-only"> <span class="medium-3 columns"><a href="#" class="edit" data-open="editModal" data-prod-id="{{prodId}}">EDIT</a></span> <span class="medium-4 columns" data-prod-id="{{prodId}}">X REMOVE</span> <span class="medium-5 columns" data-prod-id="{{prodId}}">SAVE FOR LATER</span> </div>
+				  </div>
+			   </div>
+			   <div class="medium-2 columns text-center size hide-for-small-only">{{size}}</div>
+			   <div class="medium-2 columns text-center qty hide-for-small-only">{{qty}}</div>
+			   <div class="medium-2 columns text-right priceCol hide-for-small-only">
+				  <p class="disPrice"><sup>$</sup><span class="">{{price}}</span></p>
+				  <p class="price"><sup>$</sup><span class="">{{netPrice}}</span></p>
+			   </div>
+			</div>
+	  {{/each}}
+
+	</script>
+
+  </div>
+</section>
+
+
+<section class="bottBucket">
+  <div class="row">
+    <div class="medium-4 columns  hide-for-small-only helpText">
+      <p>Need help <br>
+        or have questions?</p>
+      <p>Need help <br>
+        or have questions?</p>
+      <p>Need help <br>
+        or have questions?</p>
+      <p>Need help <br>
+        or have questions?</p>
+    </div>
+    <div class="medium-8 small-12 columns promoText">
+      <div class="row couponBar">
+        <div class="medium-4 small-12 columns lbl">ENTER PROMOTION CODE OR GIFT CARD</div>
+        <div class="medium-5 small-8 columns">
+          <input type="text" value="">
+        </div>
+        <div class="medium-3 small-4 text-right columns">
+          <button class="alert hollow button" id="applyDiscount">APPLY</button>
+        </div>
+      </div>
+      <div class="subTotalBucket">
+        <div class="row subtotalBar">
+          <div class="medium-9 columns">SUBTOTAL</div>
+          <div class="medium-3 text-right columns">
+            <p class="price"> <sup>$</sup><span>00.00</span></p>
+          </div>
+        </div>
+        <div class="row promoBar">
+          <div class="medium-9 columns disLbl">DISCOUNT</div>
+          <div class="medium-3 text-right columns">
+            <p class="price"> <sup>$</sup><span>00.00</span></p>
+          </div>
+        </div>
+        <div class="row shipBar">
+          <div class="medium-9 columns">ESTIMATED SHIPPING</div>
+          <div class="medium-3 text-right columns">
+            <p class="price"> <sup>$</sup><span>00.00</span></p>
+          </div>
+        </div>
+        <div class="row totalBar">
+          <div class="medium-9 columns">ESTIMATED TOTAL</div>
+          <div class="medium-3 text-right columns">
+            <p class="price"> <sup>$</sup><span>00.00</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="row columns text-right ">
+  <button class="warning button" id="editItem">Proceed to Checkout</button>
+</div>
+<script src="js/vendor/jquery.js" type="text/javascript"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.js"></script>
+<script src="js/vendor/foundation.js" type="text/javascript"></script>
+<script src="js/vendor/what-input.js" type="text/javascript"></script>
+<script src="js/vendor/foundation.reveal.js" type="text/javascript"></script>
+<script src="js/app.js" type="text/javascript"></script>
+
+</body>
+</html>

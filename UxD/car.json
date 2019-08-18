@@ -1,0 +1,32 @@
+{
+    "students": {
+        "student": [
+            {
+                "id": 1,
+                "name": "Aswal 1111",
+                "image": "http://shankaraswal.net/images/test1.jpeg",
+                "homepage": "http://www.shankaraswal.net"
+            },
+            {
+                "id": 2,
+                "name": "Aswal 22222",
+                "image": "http://shankaraswal.net/images/test2.jpeg",
+                "homepage": "http://www.shankaraswal.net"
+            },
+            {
+                "id": 3,
+                "name": "Aswal 3333",
+                "image": "http://shankaraswal.net/images/test3.jpeg",
+                "homepage": "http://www.shankaraswal.net"
+            },
+            {
+                "id": 4,
+                "name": "Aswal 4444",
+                "image": "http://shankaraswal.net/images/test4.jpeg",
+                "homepage": "http://www.shankaraswal.net"
+            }
+			
+			
+        ]
+    }
+}

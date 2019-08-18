@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+<title>UxD Demo - Sliding Horizontal Parallax</title>
+<link rel="stylesheet" type="text/css" media="screen" href="css/global.css" />
+<script src="scripts/jquery.min.js"></script>
+<script>
+ if (typeof jQuery == 'undefined'){
+	document.write(unescape('%3Cscript src="scripts/jquery-min.js" %3E%3C/script%3E'));
+ }
+</script>
+<script src="scripts/sequence.jquery.js"></script>
+<script src="scripts/jquery.bxslider.js"></script>
+<script src="scripts/overlay-dkt.js"></script>
+<script src="scripts/sequence.js"></script>
+</head>
+<body>
+<div id="sequence-theme">
+  <div id="sequence"> <img class="prev" src="images/bt-prev.png" alt="Previous" /> <img class="next" src="images/bt-next.png" alt="Next" />
+    <div class="logo animate-in"></div>
+    <ul>
+      <!--HOME SLIDE -->
+      <li class="slide">
+        <div class="bgWhite animate-in"></div>
+        <div class="wire animate-in"></div>
+        <div class="fences animate-in"></div>
+        <span class="trees animate-in"></span><span class="mountain animate-in"></span>
+        <div class="homeCont">
+          <h2>User eXperience Design Group</h2>
+          <h3>Create <strong>simple, effective, and easy-to-use</strong> rich interfaces by following the User Centered Design (UCD) process.</h3>
+          <p>UxD Since 1997</p>
+          <p>HCL was one of the early birds in India to take up the mantra of Human Computer Interaction (HCI)</p>
+          <p>Highly qualified team of</p>
+          <ul>
+            <li>Usability Specialists (Premier Institutes like IIT, HFI's CUA certification, UxD Academy)</li>
+            <li>Visual Designers (Bachelors and Masters in Fine Arts)</li>
+            <li>XHTML / JavaScript Developers (Bachelors and Masters in Computer Applications)</li>
+            <li>Rich Interactive Application Developers (Adobe Certified)</li>
+          </ul>
+          <p>A Core team of Senior members for Technology Tracking, Training for freshers, Cross-skilling, Mentoring and Reviewing</p>
+        </div>
+        <span class="sky animate-in"></span><span class="mainNav service animate-in"><span class="tag txtNavServ"></span></span><span class="mainNav tools animate-in"><span class="tag txtNavTools"></span></span><span class="mainNav port animate-in"><span class="tag txtNavPort"></span></span><span class="mainNav process animate-in"><span class="tag txtNavProcess"></span></span> </li>
+      <!--SERVICE SLIDE -->
+      <li class="slide">
+        <div class="bgWhite animate-in"></div>
+        <div class="wire animate-in"></div>
+        <div class="roads animate-in"></div>
+        <span class="buildings animate-in"></span> <span class="clouds animate-in"></span>
+        <div class="serviceCont">
+          <h2>Services</h2>
+          <ul class="tagCloud">
+            <li class="font22 desktop">Desktop</li>
+            <li class="print">Print</li>
+            <li class="gaming">Gaming</li>
+            <li class="orange kiosks">Kiosks</li>
+            <li class="internet">Internet</li>
+            <li class="orange font25 mobile">Mobile</li>
+            <li class="orange website">Websites</li>
+            <li class="orange webapps">Web Applications</li>
+            <li class="font22 multimedia">Multimedia</li>
+          </ul>
+          <div class="clr"></div>
+          <ul class="bgTitleBarServ">
+              <li class="usability">Usability</li>
+              <li class="gDesign">Graphic Design</li>
+              <li class="frontEnd">Frontend programming</li>
+              <li class="threeD">3D</li>
+            </ul>
+          <div class="servCats">
+            <ul class="usabilityList">
+              <li>User Research</li>
+              <li>User Profiling</li>
+              <li>Task Analysis</li>
+              <li>Information</li>
+              <li>Architecture</li>
+              <li>Prototyping</li>
+              <li>Usability Testing</li>
+            </ul>
+            <ul class="gDesignList">
+              <li>Concept Generation</li>
+              <li>Layout</li>
+              <li>Product Identity</li>
+              <li>Icons & other UI elements.</li>
+              <li>Splash Screens & Style Guide</li>
+              <li>Flash design
+            </ul>
+            <ul class="frontEndList">
+              <li>Flash</li>
+              <li>Flex / AIR</li>
+              <li>XHTML/CSS/JavaScript</li>
+              <li>Silverlight</li>
+              <li>HTML 5</li>
+            </ul>
+            <ul class="threeDList">
+              <li>Modeling</li>
+              <li>Animation</li>
+            </ul>
+          </div>
+        </div>
+        <span class="sky animate-in"></span>
+        <div class="icnSingle animate-in" ><img src="images/img-services.gif" /><span class="tag txtNavServ"></span></div>
+      </li>
+      <!--TOOLS SLIDE -->
+      <li class="slide">
+        <div class="bgWhite animate-in"></div>
+        <div class="wire animate-in"></div>
+        <div class="grass animate-in"></div>
+        <span class="industry animate-in"></span> <span class="cloudsTools animate-in"></span>
+        <div class="toolsCont">
+          <h2>Tools & Technologies</h2>
+          <div class="colLeft">
+          <ul>
+          	<li class="title">Usability</li>
+            <li>
+            	<ul>
+                    <li>Balsamiq</li>
+                    <li>Microsoft Visio, Power point</li>
+                    <li>Adobe Illustrator</li>
+                </ul>
+            </li>
+          </ul>
+          <ul>
+          	<li class="title">Usability Testing</li>
+            <li>
+            	<ul>
+                    <li>Morae Recorder, Morae Observer, Morae Manager</li>
+                </ul>
+            </li>
+          </ul>
+          <ul>
+          	<li class="title">Visual Design</li>
+            <li>
+            	<ul>
+                    <li>Adobe Photoshop, Adobe Fireworks, Kai's Power Tools</li>
+                    <li>Adobe Freehand, Adobe Illustrator</li>
+                    <li>Microangelo (Icon Creation)</li>
+                    <li>Corel Draw</li>
+                </ul>
+            </li>
+          </ul>
+          <ul>
+          	<li class="title">Web Authoring</li>
+            <li>
+            	<ul>
+                    <li>Adobe Dreamweaver</li>
+                    <li>Adobe Flash</li>
+                    <li>Adobe Flex / AIR / Silverlight</li>
+                </ul>
+            </li>
+          </ul>
+          </div>
+          
+          <div class="colRight">
+          <ul>
+          	<li class="title">Multimedia Authoring </li>
+            <li>
+            	<ul>
+                    <li>Adobe Flash, Shockwave</li>
+                    <li>Adobe Captivate</li>
+                </ul>
+            </li>
+          </ul>
+          <ul>
+          	<li class="title">Technologies</li>
+            <li>
+            	<ul>
+                    <li>HTML, CSS, JavaScript, HTML 5</li>
+                    <li>XML</li>
+                    <li>Flex 3.0, Silverlight</li>
+                    <li>Flash Action Script 3.0, Flash</li>
+                    <li>Remoting, Flash Media Server</li>
+                    <li>BlazeDS, LCDS</li>
+                </ul>
+            </li>
+          </ul>
+          <ul>
+          	<li class="title">3D</li>
+            <li>
+            	<ul>
+                    <li>Autodesk Maya</li>
+                </ul>
+            </li>
+          </ul>
+          </div>
+          <div class="clr"></div>
+          <div class="logosTools"><img src="images/img-logos-tools.png" /></div>
+        </div>
+        <span class="sky animate-in"></span>
+        <div class="icnSingle animate-in"><img src="images/img-tools.gif" /><span class="tag txtNavTools"></span></div>
+      </li>
+      <!--PORTFOLIO SLIDE -->
+      <li class="slide">
+        <div class="bgWhite animate-in"></div>
+        <div class="wire animate-in"></div>
+        <div class="garden animate-in"></div>
+        <span class="cloudsPort animate-in"></span>
+        <div class="portCont">
+          <h2>Portfolio</h2>
+          <ul class="leftTabLinks">
+            <li class="act">Logo</li>
+            <li>Web</li>
+            <li>Print</li>
+            <li>Mobile</li>
+            <li>Touch Screen Devices</li>
+          </ul>
+          <div class="rightCol">
+            <div class="portDataCont">
+              <div class="tabCont show">
+                <ul class="bxslider">
+                  <li class="imgLarge"><img src="images/large/cs1.gif">
+                    <div class="desc">
+                      <p>Media &  Entertainment – 2 (Music)</p>
+                    </div>
+                    <span class="descArw"></span>
+                    <div class="overlayData"> <img src="images/port/img-port1.gif" class="imgLarge" >
+                      <div class="rCont">
+                        <h3>Media & Entertainment – 2 (Music)</h3>
+                        <p><strong>Leading music company</strong></p>
+                        <p><strong>Domain: </strong>Media and  Entertainment</p>
+                        <p><strong>Platform: </strong>Web, iP hone, Tablet</p>
+                        <h5>Business  needs:</h5>
+                        <p>To create User Interf ace design which will be compatible on multiple platforms</p>
+                        <h5>Scope</h5>
+                        <p>To design a  user friendly interface and maintain the consistency of multiple platforms</p>
+                        <h5>UXD's So lution:</h5>
+                        <p>Native behaviors and standards  of devices were adhered for a better UX. Conceptual visual  design </p>
+                        <h5>Bene fits:</h5>
+                        <ul class="benifitsBox">
+                          <li class="lh3">Simp le <br>
+                            and<br>
+                            easy to use</li>
+                          <li class="lh1">Ne w Features</li>
+                          <li class="lh2">Reduced  no. of clicks</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                  <li><span class="imgLarge"><img src="images/large/cs2.gif"></span>
+                    <div class="desc">
+                      <p>Media &  Entertainment – 2 (Music)</p>
+                    </div>
+                    <span class="descArw"></span>
+                    <div class="overlayData"> <img src="images/port/img-port2.gif" class="imgLarge" >
+                      <div class="rCont">
+                        <h3>Media & Entertainment – 2 (Music)</h3>
+                        <p><strong>Aerospace Giant</strong></p>
+                        <p><strong>Domain: </strong>Media and  Entertainment</p>
+                        <p><strong>Platform: </strong>Web, iP hone, Tablet</p>
+                        <h5>Business  needs:</h5>
+                        <p>To create User Interf ace design which will be compatible on multiple platforms</p>
+                        <h5>Scope</h5>
+                        <p>To design a  user friendly interface and maintain the consistency of multiple platforms</p>
+                        <h5>UXD's So lution:</h5>
+                        <p>Native behaviors and standards  of devices were adhered for a better UX. Conceptual visual  design </p>
+                        <h5>Bene fits:</h5>
+                        <ul class="benifitsBox">
+                          <li class="lh3">Simp le <br>
+                            and<br>
+                            easy to use</li>
+                          <li class="lh1">Ne w Features</li>
+                          <li class="lh2">Reduced  no. of clicks</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+                <div id="bx-pager"> <a data-slide-index="0" href=""><img src="images/small/cs1.gif" /></a> <a data-slide-index="1" href=""><img src="images/small/cs2.gif" /></a> </div>
+              </div>
+              <div class="tabCont">
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,</p>
+              </div>
+              <div class="tabCont">
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,</p>
+              </div>
+              <div class="tabCont">
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,</p>
+              </div>
+              <div class="tabCont">
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <span class="sky animate-in"></span>
+        <div class="icnSingle animate-in" ><img src="images/img-port.gif" /><span class="tag txtNavPort"></span></div>
+      </li>
+      <!--PROCES SLIDE -->
+      <li class="slide">
+        <div class="bgWhite animate-in"></div>
+        <div class="wire animate-in"></div>
+        <div class="fields animate-in"></div>
+        <span class="cloudsProcess animate-in"></span>
+        <div class="processCont">
+          <h2>Process</h2>
+          <p class="bgContProcess"><img src="images/img-cont-process.png" width="1622" height="214" alt="Process"></p>
+        </div>
+        <span class="sky animate-in"></span>
+        <div class="icnSingle animate-in" ><img src="images/img-process.gif" /><span class="tag txtNavProcess"></span></div>
+      </li>
+    </ul>
+  </div>
+  <div class="sliderRoute"></div>
+  <div class="bottSliderNav">
+    <ul class="nav">
+      <li class="bHome"><img src="images/dot.png" /></li>
+      <li class="bService"><img src="images/dot.png" /></li>
+      <li class="bTools"><img src="images/dot.png" /></li>
+      <li class="bPort"><img src="images/dot.png" /></li>
+      <li class="bProcess"><img src="images/dot.png" /></li>
+    </ul>
+    <span class="birdBott stepHome"></span> </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function () {
+	$('.portDataCont .bxslider li img').shan();
+	}); 
+</script>
+</body>
+</html>
